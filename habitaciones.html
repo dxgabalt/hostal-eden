@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitaciones - Hostal Edén Ometepe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Hostal Edén</a>
+            <button class="navbar-toggler">
+                <span class="menu-icon">&#9776;</span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#habitaciones">Habitaciones</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido de la página Habitaciones -->
+    <section id="habitaciones" class="section">
+        <div class="container">
+            <h2 class="section-title">Nuestras Habitaciones</h2>
+            <p class="section-description">Descubre nuestras cómodas y acogedoras habitaciones.</p>
+
+            <div class="room">
+                <img src="habitacion1.jpg" alt="Habitación 1">
+                <h3 class="room-title">Habitación Doble</h3>
+                <p class="room-description">Una habitación espaciosa con vista al jardín. Perfecta para parejas.</p>
+                <p class="room-price">$80 por noche</p>
+            </div>
+
+            <div class="room">
+                <img src="habitacion2.jpg" alt="Habitación 2">
+                <h3 class="room-title">Suite Familiar</h3>
+                <p class="room-description">Una suite amplia con sala de estar y terraza privada.</p>
+                <p class="room-price">$120 por noche</p>
+            </div>
+
+            <div class="room">
+                <img src="habitacion3.jpg" alt="Habitación 3">
+                <h3 class="room-title">Habitación Económica</h3>
+                <p class="room-description">Una opción asequible para viajeros solitarios o parejas.</p>
+                <p class="room-price">$60 por noche</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Hostal Edén Ometepe. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript para el menú responsive -->
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navMenu = document.querySelector('.nav-menu');
+
+        menuIcon.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>

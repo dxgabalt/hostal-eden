@@ -1,0 +1,371 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Barra de Navegación */
+.navbar {
+    background-color: #0ad8db;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu li:last-child {
+    margin-right: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Menú Responsive */
+.navbar-toggler {
+    display: none;
+    height: 55px;
+    width: 51px;
+}
+
+.menu-icon {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu li {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+/* Sección de Inicio */
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Ajustar el color y la opacidad del fondo oscuro del texto */
+    padding: 10px 20px; /* Añadir espacio alrededor del texto */
+    border-radius: 10px; /* Agregar bordes redondeados al fondo oscuro del texto */
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.5); /* Ajustar el color y la opacidad del fondo oscuro del texto */
+    padding: 10px 20px; /* Añadir espacio alrededor del texto */
+    border-radius: 10px; /* Agregar bordes redondeados al fondo oscuro del texto */
+}
+
+.btn {
+    background-color: #ff3333;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff1a1a;
+}
+
+/* Otras Secciones */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-description {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Habitaciones */
+.room {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.room img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.room-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.room-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.room-price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Servicios */
+.service {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.service-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 16px;
+}
+
+/* Formularios */
+label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #ff3333;
+    color: #fff;
+    padding: 15px 30px;
+    margin-top: 14px;
+    border: none;
+    border-radius: 50px;
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff1a1a;
+}
+
+/* Footer */
+.footer {
+    background-color: #0ad8db;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+.container {
+    padding: 0 10px;
+}
+
+.navbar-toggler {
+    display: block;
+    cursor: pointer;
+}
+
+.menu-icon.active .bar {
+    background-color: #fff;
+}
+
+.nav-menu {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nav-menu.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu li {
+    margin: 10px 0;
+}
+
+.hero-title {
+    font-size: 36px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+}
+
+.section-title {
+    font-size: 28px;
+}
+
+.room img {
+    max-width: 300px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .navbar-toggler {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-icon.active .bar {
+        background-color: #fff;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .room img {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 24px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .room img {
+        max-width: 200px;
+    }
+
+    .service img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+}
